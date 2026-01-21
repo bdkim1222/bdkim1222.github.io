@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>홍길동 | Portfolio</title>
+  <title>Sungsoo Kim | Academic Portfolio</title>
 
   <style>
     :root {
-      --bg-color: #0b0b0b;
-      --main-color: #2dd4bf; /* teal */
-      --sub-color: #94a3b8;
+      --bg: #0b0b0b;
+      --text: #2dd4bf;
+      --sub: #94a3b8;
+      --border: #1f2933;
+    }
+
+    body.light {
+      --bg: #ffffff;
+      --text: #0f766e;
+      --sub: #334155;
+      --border: #e5e7eb;
     }
 
     * {
@@ -20,138 +28,161 @@
     }
 
     body {
-      background-color: var(--bg-color);
-      color: var(--main-color);
-      line-height: 1.6;
-    }
-
-    a {
-      color: var(--main-color);
-      text-decoration: none;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
     }
 
     section {
       max-width: 900px;
-      margin: 0 auto;
-      padding: 80px 20px;
+      margin: auto;
+      padding: 70px 20px;
     }
 
-    h1, h2 {
-      margin-bottom: 20px;
+    h1 {
+      font-size: 42px;
     }
 
     h2 {
-      font-size: 28px;
-      border-bottom: 1px solid #1f2933;
-      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
     }
 
-    p {
-      color: var(--sub-color);
-      margin-bottom: 10px;
+    h3 {
+      margin-top: 20px;
     }
 
-    /* Hero */
-    .hero h1 {
-      font-size: 48px;
+    p, li {
+      color: var(--sub);
+      font-size: 15px;
     }
 
-    .hero p {
-      font-size: 20px;
-      margin-top: 10px;
+    ul {
+      margin-left: 18px;
     }
 
-    /* Skills */
-    .skills span {
-      display: inline-block;
-      margin: 6px 10px 6px 0;
-      padding: 6px 14px;
-      border: 1px solid var(--main-color);
+    .toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 8px 14px;
+      border: 1px solid var(--text);
       border-radius: 20px;
-      font-size: 14px;
+      background: transparent;
+      color: var(--text);
+      cursor: pointer;
     }
 
-    /* Project */
-    .project {
-      margin-bottom: 30px;
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
       padding: 20px;
-      border: 1px solid #1f2933;
-      border-radius: 10px;
-    }
-
-    .project h3 {
-      margin-bottom: 10px;
+      margin-top: 20px;
     }
 
     footer {
       text-align: center;
-      padding: 40px 20px;
+      padding: 40px;
       font-size: 14px;
-      color: var(--sub-color);
+      color: var(--sub);
     }
   </style>
 </head>
 
 <body>
+<button class="toggle" onclick="toggleMode()">Light / Dark</button>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h1>홍길동</h1>
-    <p>Frontend Developer · 사용자 경험을 만드는 개발자</p>
-  </section>
+<section>
+  <h1>Sungsoo Kim</h1>
+  <p>Department of Physics & Astronomy, Seoul National University</p>
+  <p>📧 sooo4017@snu.ac.kr | 📞 +82 10 7603 3714</p>
+</section>
 
-  <!-- About -->
-  <section>
-    <h2>About Me</h2>
-    <p>
-      사용자 관점에서 문제를 해결하는 프론트엔드 개발자입니다.<br/>
-      깔끔한 UI와 유지보수 가능한 코드를 중요하게 생각합니다.
-    </p>
-  </section>
+<section>
+  <h2>Research Interests</h2>
+  <p>Scattering Amplitudes, Quantum Gravity, Particle Physics</p>
+</section>
 
-  <!-- Skills -->
-  <section>
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>GitHub</span>
-    </div>
-  </section>
+<section>
+  <h2>Education</h2>
+  <div class="card">
+    <p><strong>Seoul National University</strong> — B.S. in Physics (2019–Present)</p>
+    <p>GPA: 4.23 / 4.3 (Major: 4.25)</p>
+    <p>Selected Coursework: Quantum Field Theory, General Relativity, Classical Mechanics</p>
+    <p>Military Service: Aug 2021 – Feb 2023</p>
+  </div>
+</section>
 
-  <!-- Projects -->
-  <section>
-    <h2>Projects</h2>
+<section>
+  <h2>Publications</h2>
+  <ul>
+    <li>
+      <strong>Classical Eikonal in Relativistic Scattering</strong>, JHEP 11 (2025) 032
+    </li>
+    <li>
+      <strong>Classical Eikonal from Magnus Expansion</strong>, JHEP 01 (2025) 111
+    </li>
+  </ul>
+</section>
 
-    <div class="project">
-      <h3>포트폴리오 웹사이트</h3>
-      <p>• 문제: 나를 한눈에 보여줄 수단 필요</p>
-      <p>• 역할: 기획, 디자인, 개발 전부</p>
-      <p>• 기술: HTML, CSS, GitHub Pages</p>
-      <p>• 결과: 이력서 제출용 개인 사이트 완성</p>
-    </div>
+<section>
+  <h2>Research Experience</h2>
 
-    <div class="project">
-      <h3>Todo App</h3>
-      <p>• 문제: 할 일 관리 불편</p>
-      <p>• 역할: 프론트엔드 개발</p>
-      <p>• 기술: React</p>
-      <p>• 결과: CRUD 기능 구현</p>
-    </div>
-  </section>
+  <div class="card">
+    <h3>Integrability of Kerr Black Hole Scattering (2025–Present)</h3>
+    <ul>
+      <li>Developed conserved charges for Kerr and root-Kerr systems</li>
+      <li>Applied charges to simplify eikonal computations</li>
+    </ul>
+  </div>
 
-  <!-- Contact -->
-  <section>
-    <h2>Contact</h2>
-    <p>Email: example@email.com</p>
-    <p>GitHub: <a href="https://github.com/아이디" target="_blank">github.com/아이디</a></p>
-  </section>
+  <div class="card">
+    <h3>Hopf Algebra of Graphs and Trees (2025–Present)</h3>
+    <ul>
+      <li>Extended Magnus expansion to loop-level diagrams</li>
+      <li>Implemented automated diagrammatics in Mathematica</li>
+    </ul>
+  </div>
 
-  <footer>
-    © 2026 Hong Gil-dong. All rights reserved.
-  </footer>
+  <div class="card">
+    <h3>CERN Summer Student Programme 2023</h3>
+    <ul>
+      <li>Experimental analysis at LHCb</li>
+      <li>Presented results at CERN Summer Student Presentation</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Scholarships & Awards</h2>
+  <ul>
+    <li>Presidential Science Scholarship (2021–)</li>
+    <li>Dean’s List (4 semesters)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <p>Mathematica · LaTeX · Python · MATLAB</p>
+</section>
+
+
+<footer>
+  © 2026 Sungsoo Kim
+</footer>
+
+<script>
+  function toggleMode() {
+    document.body.classList.toggle("light");
+    localStorage.setItem("mode",
+      document.body.classList.contains("light") ? "light" : "dark");
+  }
+
+  if (localStorage.getItem("mode") === "light") {
+    document.body.classList.add("light");
+  }
+</script>
 
 </body>
 </html>
