@@ -1,187 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sungsoo Kim | Academic Portfolio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sungsoo Kim | Academic Homepage</title>
 
-  <style>
-    :root {
-      --bg: #0b0b0b;
-      --text: #2dd4bf;
-      --sub: #94a3b8;
-      --border: #1f2933;
-    }
+<style>
+:root {
+  --bg: #0b0b0b;
+  --text: #2dd4bf;
+  --sub: #94a3b8;
+  --border: #1f2933;
+}
 
-    body.light {
-      --bg: #ffffff;
-      --text: #0f766e;
-      --sub: #334155;
-      --border: #e5e7eb;
-    }
+body.light {
+  --bg: #ffffff;
+  --text: #0f766e;
+  --sub: #334155;
+  --border: #e5e7eb;
+}
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
-    }
+* {
+  box-sizing: border-box;
+  font-family: Charter, Georgia, serif;
+}
 
-    body {
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-    }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
 
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 70px 20px;
-    }
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+}
 
-    h1 {
-      font-size: 42px;
-    }
+h1 {
+  font-size: 40px;
+}
 
-    h2 {
-      margin-bottom: 20px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 8px;
-    }
+h2 {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+}
 
-    h3 {
-      margin-top: 20px;
-    }
+h3 {
+  margin-top: 20px;
+}
 
-    p, li {
-      color: var(--sub);
-      font-size: 15px;
-    }
+p, li {
+  color: var(--sub);
+  font-size: 15px;
+}
 
-    ul {
-      margin-left: 18px;
-    }
+ul {
+  padding-left: 18px;
+}
 
-    .toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      padding: 8px 14px;
-      border: 1px solid var(--text);
-      border-radius: 20px;
-      background: transparent;
-      color: var(--text);
-      cursor: pointer;
-    }
+.card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px;
+  margin-top: 15px;
+}
 
-    .card {
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      margin-top: 20px;
-    }
+.toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border: 1px solid var(--text);
+  background: transparent;
+  color: var(--text);
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
 
-    footer {
-      text-align: center;
-      padding: 40px;
-      font-size: 14px;
-      color: var(--sub);
-    }
-  </style>
+.cv-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 18px;
+  border: 1px solid var(--text);
+  border-radius: 20px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.cv-btn:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+  color: var(--sub);
+}
+</style>
 </head>
 
 <body>
+
 <button class="toggle" onclick="toggleMode()">Light / Dark</button>
 
 <section>
-  <h1>Sungsoo Kim</h1>
-  <p>Department of Physics & Astronomy, Seoul National University</p>
-  <p>📧 sooo4017@snu.ac.kr</p>
+<h1>Sungsoo Kim</h1>
+<p>Department of Physics & Astronomy, Seoul National University</p>
+<p></p>sooo4017@snu.ac.kr</p>
+<a class="cv-btn" href="CV_Sungsoo_Kim.pdf" target="_blank">📄 Download CV (PDF)</a>
 </section>
 
 <section>
-  <h2>Research Interests</h2>
-  <p>Scattering Amplitudes, Quantum Gravity, Particle Physics</p>
+<h2>Research Interests</h2>
+<p><strong>Scattering Amplitudes, Quantum Gravity, Particle Physics</strong></p>
 </section>
 
 <section>
-  <h2>Education</h2>
-  <div class="card">
-    <p><strong>Seoul National University</strong> — B.S. in Physics (2019–Present)</p>
-    <p>GPA: 4.23 / 4.3 (Major: 4.25)</p>
-    <p>Selected Coursework: Quantum Field Theory, General Relativity, Classical Mechanics</p>
-    <p>Military Service: Aug 2021 – Feb 2023</p>
-  </div>
+<h2>Education</h2>
+<div class="card">
+<p><strong>Seoul National University</strong> — B.S. in Physics (2019–Present)</p>
+<ul>
+<li>GPA: 4.20 / 4.3 (Major 4.25)</li>
+<li>Military Service: Aug 2021 – Feb 2023</li>
+<li>Coursework: Quantum Field Theory, General Relativity, Classical Mechanics</li>
+</ul>
+</div>
 </section>
 
 <section>
-  <h2>Publications</h2>
-  <ul>
-    <li>
-      <strong>Classical Eikonal in Relativistic Scattering</strong>, JHEP 11 (2025) 032
-    </li>
-    <li>
-      <strong>Classical Eikonal from Magnus Expansion</strong>, JHEP 01 (2025) 111
-    </li>
-  </ul>
+<h2>Publications</h2>
+<ul>
+<li>
+<strong>Classical Eikonal in Relativistic Scattering</strong><br/>
+S. S. Kim*, H. J. Lee*, S. M. Lee*<br/>
+<em>JHEP 11 (2025) 032</em>
+</li><br/>
+<li>
+<strong>Classical Eikonal from Magnus Expansion</strong><br/>
+J. H. Kim*, J. W. Kim*, S. S. Kim*, S. M. Lee*<br/>
+<em>JHEP 01 (2025) 111</em>
+</li>
+</ul>
+<p>* Equal contribution</p>
 </section>
 
 <section>
-  <h2>Research Experience</h2>
+<h2>Research Experience</h2>
 
-  <div class="card">
-    <h3>Integrability of Kerr Black Hole Scattering (2025–Present)</h3>
-    <ul>
-      <li>Developed conserved charges for Kerr and root-Kerr systems</li>
-      <li>Applied charges to simplify eikonal computations</li>
-    </ul>
-  </div>
+<div class="card">
+<h3>Integrability of Kerr Black Hole Scattering (2025–Present)</h3>
+<ul>
+<li>Extended conserved charges for Kerr and root-Kerr systems</li>
+<li>Applied integrability to simplify eikonal computations</li>
+</ul>
+</div>
 
-  <div class="card">
-    <h3>Hopf Algebra of Graphs and Trees (2025–Present)</h3>
-    <ul>
-      <li>Extended Magnus expansion to loop-level diagrams</li>
-      <li>Implemented automated diagrammatics in Mathematica</li>
-    </ul>
-  </div>
+<div class="card">
+<h3>Hopf Algebra of Graphs and Trees (2025–Present)</h3>
+<ul>
+<li>Extended Magnus expansion to loop-level diagrams</li>
+<li>Implemented automated computations in Mathematica</li>
+</ul>
+</div>
 
-  <div class="card">
-    <h3>CERN Summer Student Programme 2023</h3>
-    <ul>
-      <li>Experimental analysis at LHCb</li>
-      <li>Presented results at CERN Summer Student Presentation</li>
-    </ul>
-  </div>
+<div class="card">
+<h3>CERN Summer Student Programme 2023</h3>
+<ul>
+<li>Experimental analysis at LHCb</li>
+<li>Selected as Korean national representative</li>
+</ul>
+</div>
 </section>
 
 <section>
-  <h2>Scholarships & Awards</h2>
-  <ul>
-    <li>Presidential Science Scholarship (2021–)</li>
-    <li>Dean’s List (4 semesters)</li>
-  </ul>
+<h2>Scholarships & Awards</h2>
+<ul>
+<li>Presidential Science Scholarship (2021)</li>
+</ul>
 </section>
 
 <section>
-  <h2>Skills</h2>
-  <p>Mathematica · LaTeX · Python · MATLAB</p>
+<h2>Skills</h2>
+<p>Mathematica · LaTeX · Python · MATLAB</p>
 </section>
 
 
 <footer>
-  © 2026 Sungsoo Kim
+© 2026 Sungsoo Kim
 </footer>
 
 <script>
-  function toggleMode() {
-    document.body.classList.toggle("light");
-    localStorage.setItem("mode",
-      document.body.classList.contains("light") ? "light" : "dark");
-  }
-
-  if (localStorage.getItem("mode") === "light") {
-    document.body.classList.add("light");
-  }
+function toggleMode() {
+  document.body.classList.toggle("light");
+  localStorage.setItem("mode",
+    document.body.classList.contains("light") ? "light" : "dark");
+}
+if (localStorage.getItem("mode") === "light") {
+  document.body.classList.add("light");
+}
 </script>
 
 </body>
